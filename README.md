@@ -19,7 +19,8 @@ so the agent loop stays visible. Each folder is a self-contained step.
 | [`12-intent-routing`](./12-intent-routing) | Classify intent first, dispatch to a dedicated handler | done |
 | [`13-planning`](./13-planning) | Plan the whole task upfront vs. reacting step by step | done |
 | [`14-stateful-coordination`](./14-stateful-coordination) | Agents sharing a common workspace, not just final answers | done |
-| `15-frameworks` | Same ideas rebuilt with a framework | planned |
+| [`15-artifact-references`](./15-artifact-references) | Reference large tool output by ID instead of inlining it | done |
+| `16-frameworks` | Same ideas rebuilt with a framework | planned |
 
 ## Setup: local model via Ollama
 
