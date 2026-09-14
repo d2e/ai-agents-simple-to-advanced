@@ -17,7 +17,7 @@ so the agent loop stays visible. Each folder is a self-contained step.
 | [`10-evaluation`](./10-evaluation) | Automated pass/fail checks, not eyeballing output | done |
 | [`11-prompt-injection`](./11-prompt-injection) | Untrusted tool/RAG content trying to hijack the agent | done |
 | [`12-intent-routing`](./12-intent-routing) | Classify intent first, dispatch to a dedicated handler | done |
-| `13-planning` | Plan the whole task upfront vs. reacting step by step | planned |
+| [`13-planning`](./13-planning) | Plan the whole task upfront vs. reacting step by step | done |
 | `14-stateful-coordination` | Agents sharing a common workspace, not just final answers | planned |
 | `15-frameworks` | Same ideas rebuilt with a framework | planned |
 
