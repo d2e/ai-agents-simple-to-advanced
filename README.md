@@ -24,6 +24,27 @@ so the agent loop stays visible. Each folder is a self-contained step.
 | [`17-resilience`](./17-resilience) | Retry with backoff - only for failures a retry can fix | done |
 | `18-frameworks` | Same ideas rebuilt with a framework | planned |
 
+## Suggested reading paths
+
+Folders are numbered in the order they were added (roughly increasing
+complexity), but related concepts ended up spread out. If you want to
+go deeper on one theme instead of reading start to finish:
+
+- **Context management** — [`03-memory`](./03-memory) →
+  [`06-context-compaction`](./06-context-compaction) →
+  [`16-token-budget-context`](./16-token-budget-context) →
+  [`15-artifact-references`](./15-artifact-references)
+- **Multi-agent patterns** — [`04-multi-agent`](./04-multi-agent) →
+  [`12-intent-routing`](./12-intent-routing) →
+  [`14-stateful-coordination`](./14-stateful-coordination)
+- **Safety & reliability** — [`08-guardrails`](./08-guardrails) →
+  [`09-human-in-the-loop`](./09-human-in-the-loop) →
+  [`11-prompt-injection`](./11-prompt-injection) →
+  [`17-resilience`](./17-resilience)
+- **Everything else** — [`05-rag`](./05-rag),
+  [`07-streaming`](./07-streaming), [`10-evaluation`](./10-evaluation),
+  [`13-planning`](./13-planning) each stand alone
+
 ## Setup: local model via Ollama
 
 ```bash
