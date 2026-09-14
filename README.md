@@ -7,7 +7,7 @@ so the agent loop stays visible. Each folder is a self-contained step.
 | --- | --- | --- |
 | [`01-basics`](./01-basics) | Core agent loop: think → act → observe | done |
 | [`02-tool-use`](./02-tool-use) | Structured (JSON) tool calls, native API | done |
-| `03-memory` | Conversation memory / state across turns | planned |
+| [`03-memory`](./03-memory) | Conversation memory / state across turns | done |
 | `04-multi-agent` | Agents collaborating or delegating | planned |
 | `05-frameworks` | Same ideas rebuilt with a framework | planned |
 
