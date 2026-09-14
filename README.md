@@ -14,7 +14,9 @@ so the agent loop stays visible. Each folder is a self-contained step.
 | [`07-streaming`](./07-streaming) | Token-by-token output | done |
 | [`08-guardrails`](./08-guardrails) | Validate output, retry on bad shape | done |
 | [`09-human-in-the-loop`](./09-human-in-the-loop) | Pause for approval before risky tool calls | done |
-| `10-frameworks` | Same ideas rebuilt with a framework | planned |
+| [`10-evaluation`](./10-evaluation) | Automated pass/fail checks, not eyeballing output | done |
+| `11-prompt-injection` | Untrusted tool/RAG content trying to hijack the agent | planned |
+| `12-frameworks` | Same ideas rebuilt with a framework | planned |
 
 ## Setup: local model via Ollama
 
