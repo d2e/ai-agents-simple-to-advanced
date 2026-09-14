@@ -24,6 +24,11 @@ so the agent loop stays visible. Each folder is a self-contained step.
 | [`17-resilience`](./17-resilience) | Retry with backoff - only for failures a retry can fix | done |
 | `18-frameworks` | Same ideas rebuilt with a framework | planned |
 
+Observability and cost tracking aren't covered as standalone stdlib
+tutorials — most frameworks provide these out of the box (tracing,
+per-call token/cost accounting), so they'll be covered as part of
+`18-frameworks` instead of reimplemented from scratch here.
+
 ## Suggested reading paths
 
 Folders are numbered in the order they were added (roughly increasing
