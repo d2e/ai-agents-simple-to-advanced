@@ -13,7 +13,7 @@ so the agent loop stays visible. Each folder is a self-contained step.
 | [`06-context-compaction`](./06-context-compaction) | Summarize/trim history once it gets long | done |
 | [`07-streaming`](./07-streaming) | Token-by-token output | done |
 | [`08-guardrails`](./08-guardrails) | Validate output, retry on bad shape | done |
-| `09-human-in-the-loop` | Pause for approval before risky tool calls | planned |
+| [`09-human-in-the-loop`](./09-human-in-the-loop) | Pause for approval before risky tool calls | done |
 | `10-frameworks` | Same ideas rebuilt with a framework | planned |
 
 ## Setup: local model via Ollama
