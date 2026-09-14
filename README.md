@@ -18,7 +18,7 @@ so the agent loop stays visible. Each folder is a self-contained step.
 | [`11-prompt-injection`](./11-prompt-injection) | Untrusted tool/RAG content trying to hijack the agent | done |
 | [`12-intent-routing`](./12-intent-routing) | Classify intent first, dispatch to a dedicated handler | done |
 | [`13-planning`](./13-planning) | Plan the whole task upfront vs. reacting step by step | done |
-| `14-stateful-coordination` | Agents sharing a common workspace, not just final answers | planned |
+| [`14-stateful-coordination`](./14-stateful-coordination) | Agents sharing a common workspace, not just final answers | done |
 | `15-frameworks` | Same ideas rebuilt with a framework | planned |
 
 ## Setup: local model via Ollama
