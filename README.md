@@ -11,7 +11,7 @@ so the agent loop stays visible. Each folder is a self-contained step.
 | [`04-multi-agent`](./04-multi-agent) | Agents collaborating or delegating | done |
 | [`05-rag`](./05-rag) | Retrieval augmented generation | done |
 | [`06-context-compaction`](./06-context-compaction) | Summarize/trim history once it gets long | done |
-| `07-streaming` | Token-by-token output | planned |
+| [`07-streaming`](./07-streaming) | Token-by-token output | done |
 | `08-guardrails` | Validate output, retry on bad shape | planned |
 | `09-human-in-the-loop` | Pause for approval before risky tool calls | planned |
 | `10-frameworks` | Same ideas rebuilt with a framework | planned |
