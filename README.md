@@ -22,7 +22,8 @@ so the agent loop stays visible. Each folder is a self-contained step.
 | [`15-artifact-references`](./15-artifact-references) | Reference large tool output by ID instead of inlining it | done |
 | [`16-token-budget-context`](./16-token-budget-context) | Assemble context by token budget, not message count | done |
 | [`17-resilience`](./17-resilience) | Retry with backoff - only for failures a retry can fix | done |
-| `18-frameworks` | Same ideas rebuilt with a framework | planned |
+| [`18-harness`](./18-harness) | The recurring loop+tools+plugins pattern, factored into one reusable class | done |
+| `19-frameworks` | Same ideas rebuilt with a framework | planned |
 
 Observability and cost tracking aren't covered as standalone stdlib
 tutorials — most frameworks provide these out of the box (tracing,
