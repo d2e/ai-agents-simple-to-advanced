@@ -48,20 +48,27 @@ def convert_temperature(value, from_unit, to_unit):
     # A multi-parameter tool - this is the kind of call the plain-text
     # "TOOL: name <single input>" protocol from 01-basics couldn't
     # express cleanly, but a JSON schema handles without any extra work.
-    to_celsius = {
-        "celsius": lambda v: v,
-        "fahrenheit": lambda v: (v - 32) * 5 / 9,
-        "kelvin": lambda v: v - 273.15,
-    }
-    from_celsius = {
-        "celsius": lambda c: c,
-        "fahrenheit": lambda c: c * 9 / 5 + 32,
-        "kelvin": lambda c: c + 273.15,
-    }
-    if from_unit not in to_celsius or to_unit not in from_celsius:
-        return f"error: unknown unit(s) {from_unit!r}/{to_unit!r}"
-    celsius = to_celsius[from_unit](value)
-    result = from_celsius[to_unit](celsius)
+
+    # Step 1: convert whatever unit we were given into celsius.
+    if from_unit == "celsius":
+        celsius = value
+    elif from_unit == "fahrenheit":
+        celsius = (value - 32) * 5 / 9
+    elif from_unit == "kelvin":
+        celsius = value - 273.15
+    else:
+        return f"error: unknown unit '{from_unit}'"
+
+    # Step 2: convert from celsius into whatever unit was requested.
+    if to_unit == "celsius":
+        result = celsius
+    elif to_unit == "fahrenheit":
+        result = celsius * 9 / 5 + 32
+    elif to_unit == "kelvin":
+        result = celsius + 273.15
+    else:
+        return f"error: unknown unit '{to_unit}'"
+
     return f"{result:.2f} {to_unit}"
 
 
