@@ -21,7 +21,8 @@ so the agent loop stays visible. Each folder is a self-contained step.
 | [`14-stateful-coordination`](./14-stateful-coordination) | Agents sharing a common workspace, not just final answers | done |
 | [`15-artifact-references`](./15-artifact-references) | Reference large tool output by ID instead of inlining it | done |
 | [`16-token-budget-context`](./16-token-budget-context) | Assemble context by token budget, not message count | done |
-| `17-frameworks` | Same ideas rebuilt with a framework | planned |
+| [`17-resilience`](./17-resilience) | Retry with backoff - only for failures a retry can fix | done |
+| `18-frameworks` | Same ideas rebuilt with a framework | planned |
 
 ## Setup: local model via Ollama
 
