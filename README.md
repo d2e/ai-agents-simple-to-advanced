@@ -24,6 +24,7 @@ so the agent loop stays visible. Each folder is a self-contained step.
 | [`17-resilience`](./17-resilience) | Retry with backoff - only for failures a retry can fix | done |
 | [`18-harness`](./18-harness) | The recurring loop+tools+plugins pattern, factored into one reusable class | done |
 | `19-frameworks` | Same ideas rebuilt with a framework | planned |
+| [`20-self-improvement`](./20-self-improvement) | Agent rewrites its own prompt from measured failures | done |
 
 Observability and cost tracking aren't covered as standalone stdlib
 tutorials — most frameworks provide these out of the box (tracing,
@@ -47,9 +48,11 @@ go deeper on one theme instead of reading start to finish:
   [`09-human-in-the-loop`](./09-human-in-the-loop) →
   [`11-prompt-injection`](./11-prompt-injection) →
   [`17-resilience`](./17-resilience)
+- **Measuring & improving** — [`10-evaluation`](./10-evaluation) →
+  [`20-self-improvement`](./20-self-improvement)
 - **Everything else** — [`05-rag`](./05-rag),
-  [`07-streaming`](./07-streaming), [`10-evaluation`](./10-evaluation),
-  [`13-planning`](./13-planning) each stand alone
+  [`07-streaming`](./07-streaming), [`13-planning`](./13-planning) each
+  stand alone
 
 ## Setup: local model via Ollama
 
